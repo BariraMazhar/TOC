@@ -54,7 +54,6 @@ input_entry.pack(side=tk.LEFT, padx=5)
 check_button = tk.Button(root, text="Check Offensive Words", font=("Arial", 12, "bold"), bg="#007acc", fg="white", command=check_message)
 check_button.pack(pady=10)
 
-# Output Frame
 output_frame = tk.Frame(root, bg="#f0f8ff")
 output_frame.pack(pady=10)
 
@@ -64,7 +63,6 @@ output_label.pack()
 output_text = tk.Text(output_frame, width=70, height=10, font=("Arial", 12))
 output_text.pack()
 
-# Tag configuration for offensive words
 output_text.tag_config("offensive", foreground="red", font=("Arial", 12, "bold"))
 
 root.mainloop()
